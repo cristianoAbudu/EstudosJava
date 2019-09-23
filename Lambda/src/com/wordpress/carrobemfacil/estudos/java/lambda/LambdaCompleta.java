@@ -1,4 +1,4 @@
-package br.com.wordpress.carrobemfacil.estudos.java.lambda;
+package com.wordpress.carrobemfacil.estudos.java.lambda;
 
 import java.awt.event.ActionListener;
 import java.text.ParseException;
@@ -9,16 +9,18 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.stream.Stream;
 
-public class MethodReference {
+public class LambdaCompleta {
 	public static void main(String[] args) throws Exception{
-	   String [] words = {"John", "Mary", "Jesus"};
+	    String [] words = {"John", "Mary", "Jesus"};
 		Arrays.sort(
 		    words, 
-		    String::compareToIgnoreCase
+		    (primeiro, segundo) -> {
+		        System.out.println(primeiro + " " + segundo);
+		        return primeiro.length() - segundo.length() ;
+		    }   
 		);
 		for(String word : words){
 	        System.out.println(word);
-		} 
+		}
 	}
-	
 }

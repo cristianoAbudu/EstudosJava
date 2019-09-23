@@ -1,4 +1,4 @@
-package br.com.wordpress.carrobemfacil.estudos.java.lambda;
+package com.wordpress.carrobemfacil.estudos.java.lambda;
 
 import java.util.Arrays;
 import java.util.Comparator;

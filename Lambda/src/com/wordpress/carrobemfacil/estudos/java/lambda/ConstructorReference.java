@@ -1,4 +1,4 @@
-package br.com.wordpress.carrobemfacil.estudos.java.lambda;
+package com.wordpress.carrobemfacil.estudos.java.lambda;
 
 import java.awt.event.ActionListener;
 import java.text.ParseException;
